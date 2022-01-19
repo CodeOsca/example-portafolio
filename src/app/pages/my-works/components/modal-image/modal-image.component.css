@@ -1,0 +1,30 @@
+.modal-container {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+.modal-body img {
+  max-width: 70%;
+  height: 60vh;
+  object-fit: contain;
+}
+.controls {
+  position: fixed;
+  bottom: 2.5rem;
+  left: 0;
+  height: 60px;
+  width: 100%;
+}
+.close {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}

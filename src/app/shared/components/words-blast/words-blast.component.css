@@ -1,0 +1,7 @@
+span {
+  display: inline-block;
+  cursor: context-menu;
+}
+span.block {
+  display: block;
+}

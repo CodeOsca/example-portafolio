@@ -1,0 +1,16 @@
+<div class="row mt-3 works">
+  <div class="col-12">
+    <h1>
+      <app-words-blast [words]="['Works']"></app-words-blast>
+    </h1>
+  </div>
+
+  <div class="col-md-6" *ngFor="let work of works">
+    <app-work (onClick)="showModal($event)" [work]="work"></app-work>
+  </div>
+</div>
+<app-modal-image
+  [images]="selectedImages"
+  (onClose)="resetSelectedImages()"
+  *ngIf="selectedImages.length > 0"
+></app-modal-image>

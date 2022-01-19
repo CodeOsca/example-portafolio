@@ -1,0 +1,43 @@
+<div
+  class="card mx-auto mb-4 text-white border-success mb-3 animate__animated animate__fadeIn"
+  style="max-width: 18rem; height: 15rem"
+>
+  <div
+    class="card-header animate__animated animate__backInDown text-center"
+    *ngIf="isActiveTechnologies"
+  >
+    <img
+      [src]="url"
+      alt=""
+      *ngFor="let url of work.technologies"
+      width="50px"
+    />
+  </div>
+  <div class="card-body" style="overflow: hidden">
+    <img [src]="work.image" alt="MatchupsGames" class="img-fluid" />
+  </div>
+  <div class="card-footer text-center">
+    <img
+      src="./assets/images/work/icons8-image-100.png"
+      alt="Images"
+      title="Images"
+      width="50px"
+      (click)="onImage()"
+    />
+
+    <img
+      src="./assets/images/work/icons8-keyboard-100.png"
+      alt="Keyboard"
+      title="Technologies"
+      width="50px"
+      (click)="isActiveTechnologies = !isActiveTechnologies"
+    />
+    <a [href]="work.externalLink" target="_blank" *ngIf="work.externalLink">
+      <img
+        src="./assets/images/work/icons8-external-link-100.png"
+        alt="External Link"
+        title="External Link"
+        width="50px"
+    /></a>
+  </div>
+</div>

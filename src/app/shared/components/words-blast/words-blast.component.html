@@ -1,0 +1,8 @@
+<span
+  class="animate__animated animate__backInDown"
+  [class.block]="isLetterLine(letter)"
+  [innerHTML]="parserLetterSpacing(letter)"
+  *ngFor="let letter of arrayOfLetter"
+  appHover
+>
+</span>

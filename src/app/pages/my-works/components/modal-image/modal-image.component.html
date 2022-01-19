@@ -1,0 +1,27 @@
+<div class="modal-container text-center animate__animated animate__fadeInUp">
+  <div class="modal-body">
+    <img [src]="url" class="img-fluid" />
+  </div>
+  <div class="controls">
+    <span class="mr-5 rounded-circle" role="button" (click)="previous()">
+      <img
+        src="./assets/images/modal/icons8-u-turn-to-left-100.png"
+        alt="arrow left"
+        width="50px"
+      />
+    </span>
+    <span class="ml-5 rounded-circle" role="button" (click)="next()">
+      <img
+        src="./assets/images/modal/icons8-u-turn-to-right-100.png"
+        alt="arrow right"
+        width="50px"
+      />
+    </span>
+  </div>
+  <img
+    class="close"
+    src="./assets/images/modal/icons8-close-window-100.png"
+    alt="close"
+    (click)="close()"
+  />
+</div>
